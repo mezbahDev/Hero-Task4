@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url(image/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    padding: 2rem 0;
+}
+
+
+.team-container{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: underline;
+     text-underline-offset: 0.5em;
+}
+
+.team-member_container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.team-member{
+    height: 32rem;
+    width: 30rem;
+    padding: 1rem 1rem;
+    background-color: rgb(149, 120, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: -1px 1px 30px rgb(149, 120, 255);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member.Captain{
+    background-color: rgb(172, 56, 56);
+     box-shadow: -2px 2px 30px rgb(172, 56, 56);
+}
+
+.team-member h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member_info{
+    padding: 1rem 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.team-member_info h2{
+    color: white;
+}
+
+.team-member_info h2:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: rgb(192, 237, 255);
+}
+
+.team-member_position{
+    font-size: 1.2rem;
+    font-weight: 500; 
+}
+
+.team-member_position:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.team-member_description{
+    color: rgb(237, 242, 255);
+    font-size: 1rem;
+}
