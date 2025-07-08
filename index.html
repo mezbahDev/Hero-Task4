@@ -109,14 +109,13 @@
 </body>
 
 <script>
-  window.addEventListener("DOMContentLoaded", () => {
-    window.addEventListener("click", () => {
-      const audio = document.getElementById("music");
-      audio.muted = false; 
-      audio.play().catch(e => console.log("Playback error:", e));
-    });
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('music');
+    audio.muted = false;         // অডিও আন-মিউট
+    audio.play().catch(err => console.error('Play error:', err));
   });
 </script>
+
 
 
 
